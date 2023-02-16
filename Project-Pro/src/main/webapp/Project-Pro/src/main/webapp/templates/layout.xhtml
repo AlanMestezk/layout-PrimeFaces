@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:p="http://primefaces.org/ui"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/226/226777.png"/>
+
+<h:outputStylesheet name="/css/layoutStyle.css"/>
+
+<title>System - Java</title>
+</h:head>
+<h:body >
+	
+	<div align="center">
+	<p:layout fullPage="true" class="layout">
+	
+		<p:layoutUnit position="north"  size="100" minSize="10" >
+			<ui:insert name="top"/>
+	    </p:layoutUnit>
+		
+	    <p:layoutUnit position="west" size="200" >
+	    	<div > 
+	        <ui:insert name="menu"/>
+	        </div>
+	    </p:layoutUnit>
+	 
+	    <p:layoutUnit position="center" >
+	       <ui:insert name="conteudo"/>
+	    </p:layoutUnit>
+	    
+	    <p:layoutUnit position="east" size="150" >
+	    	<div > 
+	        <ui:insert name="loren"/>
+	        </div>
+	    </p:layoutUnit>
+	    
+	     <p:layoutUnit position="south" size="200" minSize="10">
+          	<ui:insert name="footer"/>
+   		 </p:layoutUnit>
+	</p:layout>
+	</div>
+	
+</h:body>
+</html>
