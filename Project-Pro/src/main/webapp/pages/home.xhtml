@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+			    xmlns:p="http://primefaces.org/ui"
+				xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+				
+				template="/templates/layout.xhtml"
+>
+
+
+	<ui:define name="top" >
+		<div style="background-color: #000077;"> 
+			 <h:graphicImage url="/resources/img/bart.png" style="width: 17%; height: 22%; " />
+		</div>
+	</ui:define>
+
+	<ui:define name="menu"  >
+		<div class="divHome"> 
+			<ui:include src="/includes/menu.xhtml" />
+		</div>
+	</ui:define>
+	
+	<ui:define name="conteudo"  >
+		<div class="divHome"> 
+			<h:outputText value="Java.Web.System"  style="	font-weight: bolder;"/>
+			<hr/>
+			<div>
+				 <h:graphicImage url="/resources/img/java.png" style="width: 30%; height: 50%; " />
+			</div>
+			<h:outputText value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing"  style="	font-weight: bolder;"/>
+		</div>
+	</ui:define>
+	
+	<ui:define  name="loren"  >
+		<div class="divHome"> 
+			<ui:include src="/includes/menuOther.xhtml" />
+		</div>
+	</ui:define>
+	
+	<ui:define name="footer" >
+		<h:graphicImage url="/resources/img/north-foto.png" style="width: 17%; "  />
+		<hr/>
+		<h:outputText value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" style="font-weight: bolder;"/>
+		<br/>
+		<h:outputText value="Create By: AlanMestezk © 2023" style="	font-weight: bolder;"/>
+	</ui:define>
+
+</ui:composition>
+
+
+
+
+
+
+
+
+
